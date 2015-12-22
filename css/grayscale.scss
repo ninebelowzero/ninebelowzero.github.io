@@ -13,7 +13,8 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    // font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Menlo', 'Courier', monospace;
     color: $light;
     background-color: $dark;
 }
@@ -30,19 +31,21 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    text-transform: lowercase;
+    font-family: 'Menlo', 'Courier', monospace;
+    // font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
 p {
+    font-weight: 200;
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 1.5;
     @media(min-width:768px) {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 17px;
         line-height: 1.6;
     }
 }
@@ -63,15 +66,17 @@ a {
     &:hover,
     &:focus {
         text-decoration: none;
-        color: darken($primary,20%);
+        color: darken($primary,80%);
     }
 }
 
 .navbar-custom {
+    font-size: 16px;
     margin-bottom: 0;
     border-bottom: 1px solid rgba($light, 0.3);
-    text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: lowercase;
+    font-family: 'Menlo', 'Courier', monospace;
+    // font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: $navbar-sm-background-color;
 
     /* Fix height limit and scroll for small screen and many items menu */
@@ -88,7 +93,7 @@ a {
         }
     }
     .navbar-brand {
-        font-weight: 700;
+        font-weight: 400;
         &:focus {
             outline: none;
         }
@@ -166,7 +171,7 @@ a {
             font-size: 40px;
         }
         .intro-text {
-            font-size: 18px;
+            font-size: 15px;
             @if $navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
@@ -338,10 +343,11 @@ body {
 
 /* Added in { Personal } for Typed Cursor in Header */
 .typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    display: none;
+    // opacity: 1;
+    // -webkit-animation: blink 0.7s infinite;
+    // -moz-animation: blink 0.7s infinite;
+    // animation: blink 0.7s infinite;
 }
 @keyframes blink{
     0% { opacity:1; }
