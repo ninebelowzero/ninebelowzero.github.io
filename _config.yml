@@ -31,7 +31,7 @@ force-https: False
 lang: "en"
 author: "Richard Silk"
 title: "Richard Silk (ninebelowzero)"
-description: "Personal website of Richard Silk, AKA ninebelowzero: reporter-turned-coder."
+description: "Personal website of reporter-turned-coder Richard Silk, AKA ninebelowzero."
 keywords: "richard, silk, ninebelowzero, code, developer, web, javascript, ruby"
 favicon: "/img/favicon.ico"
 404-img: "/img/labtocat.png"
@@ -40,7 +40,7 @@ favicon: "/img/favicon.ico"
 # Header layout #
 ################
 
-black-favicon: "/img/favicon.ico"
+black-favicon: "/img/favicon-white.ico"
 
 background-img: "../img/intro-bg.jpg"
 
@@ -54,7 +54,7 @@ loop: True
 loop-count: 1  # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
 start-delay: 500
-delete-delay: 5000
+delete-delay: 4000
 lines: # You can add HTML Tags in the Text
   - text: "We are all apprentices in a craft where no one ever becomes a master."
   - text: "Ernest Hemingway"
