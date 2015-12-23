@@ -1,0 +1,18 @@
+---
+---
+
+@import "variables";
+@import "mixins";
+
+.projects-box {
+  padding: 20px;
+}
+
+.projects-box p {
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.project-image {
+  width: 100%;
+}
