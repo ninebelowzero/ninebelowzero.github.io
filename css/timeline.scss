@@ -24,10 +24,6 @@
     min-height: 50px;
 }
 
-// .timeline>li:last-child {
-//     border: 2px solid red;
-// }
-
 .timeline>li:before,
 .timeline>li:after {
     content: " ";
@@ -123,12 +119,19 @@
     margin-bottom: 0;
 }
 
-.timeline .timeline-heading h4 {
+.timeline .timeline-heading small {
     margin-top: 0;
     color: inherit;
+    display: block;
+    font-size: 11px;
+    @media (min-width: 480px) {
+        font-size: 12px;
+    }    @media (min-width: 768px) {
+        font-size: 15px;
+    }
 }
 
-.timeline .timeline-heading h4.subheading {
+.timeline .timeline-heading small.subheading {
     text-transform: none;
 }
 
