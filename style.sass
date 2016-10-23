@@ -1,7 +1,11 @@
 // $background-color: #3B8BCC
 // $background-color-odd: skyblue
-$background-color-odd: #cceeff
+// $background-color-odd: #cceeff
+$link-color: #3eacd0
+// $background-color-odd: #e1f2f7
+$background-color-odd: #c3e9f6
 $background-color-even: white
+$darker-color: #046484
 $main-font: 'Abel' //'Raleway', 'Helvetica', 'Arial', sans-serif
 $display-font: 'Unica One', monospace
 
@@ -49,13 +53,14 @@ main
     font-family: $display-font
 
   a
-    color: #00aaff;
-    -webkit-transition: color .1s ease-in-out;
-    -moz-transition: color .1s ease-in-out;
-    transition: color .1s ease-in-out;
+    color: $link-color;
+    -webkit-transition: color .1s ease-in-out
+    -moz-transition: color .1s ease-in-out
+    transition: color .1s ease-in-out
 
   a:hover, a:focus
-    text-decoration: none;
+    color: $darker-color
+    text-decoration: none
 
   p
     font-size: 2rem

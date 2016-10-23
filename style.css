@@ -47,13 +47,14 @@ main h1, main h2 {
 }
 
 main a {
-  color: #00aaff;
+  color: #3eacd0;
   -webkit-transition: color .1s ease-in-out;
   -moz-transition: color .1s ease-in-out;
   transition: color .1s ease-in-out;
 }
 
 main a:hover, main a:focus {
+  color: #046484;
   text-decoration: none;
 }
 
@@ -90,7 +91,7 @@ main section .container {
 }
 
 main section:nth-child(odd) {
-  background-color: #cceeff;
+  background-color: #c3e9f6;
 }
 
 main section:nth-child(even) {
@@ -109,7 +110,7 @@ main .button-holder {
 }
 
 main .button-holder .glyphicon {
-  color: #cceeff;
+  color: #c3e9f6;
   font-size: 3rem;
 }
 
