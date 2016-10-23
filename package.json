@@ -1,0 +1,15 @@
+{
+  "name": "front_end_sandbox",
+  "version": "1.0.0",
+  "description": "A sandbox project to try things out on the front end",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-contrib-jshint": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rich",
+  "license": "ISC"
+}
