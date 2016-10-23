@@ -1,3 +1,9 @@
+$(document).ready(function() {
+
+    // To stop bots from scraping the memail address
+    $('#botbuster').text('@');
+});
+
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {

@@ -10,6 +10,8 @@ header
   opacity: 0.9
   font-weight: 400
   font-size: 1.8rem
+  position: fixed;
+  z-index: 1050;
 
   span.brand-name
     text-transform: uppercase
@@ -31,16 +33,33 @@ main
     margin: 4rem
     font-family: 'Unica One'
 
+  a
+    color: white;
+    -webkit-transition: color .1s ease-in-out;
+    -moz-transition: color .1s ease-in-out;
+    transition: color .1s ease-in-out;
+
+  a:hover, a:focus
+    text-decoration: none;
+
   p
     font-size: 2rem
     font-weight: 200
     margin: 4rem
     font-weight: 100
 
+  p.centered
+    text-align: center
+
   section
     padding-top: 100px
     margin: 0 auto
     width: 75%
+
+  img#headshot
+    width: 200px
+    border: 2px solid white;
+
 
 @media (min-width: 768px)
   .navbar

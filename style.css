@@ -9,6 +9,8 @@ header {
   opacity: 0.9;
   font-weight: 400;
   font-size: 1.8rem;
+  position: fixed;
+  z-index: 1050;
 }
 
 header span.brand-name {
@@ -34,6 +36,17 @@ main h1, main h2 {
   font-family: 'Unica One';
 }
 
+main a {
+  color: white;
+  -webkit-transition: color .1s ease-in-out;
+  -moz-transition: color .1s ease-in-out;
+  transition: color .1s ease-in-out;
+}
+
+main a:hover, main a:focus {
+  text-decoration: none;
+}
+
 main p {
   font-size: 2rem;
   font-weight: 200;
@@ -41,10 +54,19 @@ main p {
   font-weight: 100;
 }
 
+main p.centered {
+  text-align: center;
+}
+
 main section {
   padding-top: 100px;
   margin: 0 auto;
   width: 75%;
+}
+
+main img#headshot {
+  width: 200px;
+  border: 2px solid white;
 }
 
 @media (min-width: 768px) {

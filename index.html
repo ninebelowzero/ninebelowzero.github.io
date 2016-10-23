@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Demo page</title>
+
+  <title>Richard Silk</title>
+
+  <meta charset="utf-8">
 
   <!-- JQUERY -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.js"></script>
@@ -37,13 +40,19 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
+
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-implode" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top"><span class="brand-name">Lovelace Enterprises</span></a>
+
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <span class="brand-name">
+            Richard Silk (ninebelowzero)
+          </span>
+        </a>
       </div>
 
       <!-- Collect the nav links, forms,  and other content for toggling -->
@@ -51,7 +60,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
           <li><a class="page-scroll" href="#about">About<span class="sr-only">(current)</span></a></li>
-          <li><a class="page-scroll" href="#faq">FAQ</a></li>
+          <li><a class="page-scroll" href="#projects">Projects</a></li>
+          <li><a class="page-scroll" href="#timeline">Timeline</a></li>
           <li><a class="page-scroll" href="#contact">Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -64,20 +74,47 @@
   <section id="intro">
     <h1>Demo Page</h1>
 
-    <p>This is a demo page to try out some fun front-end tricks using jQuery with Bootstrap and maybe some other plugins as I find them.</p>
+    <div class="row">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="col-sm-4">
+
+        <p><img src="headshot_medium.jpg" id="headshot"></p>
+
+      </div>
+
+      <div class="col-sm-8">
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </div> <!-- .col-sm-8 -->
+
+    </div> <!-- .row -->
 
   </section>
 
   <section id="about">
     <h2>About</h2>
 
+    <p>
+      I'm a web developer who's obsessed with languages (human and otherwise) and the things you can write with them. I'm a big fan of Python and Ruby and have a complicated relationship with JavaScript.
+    </p>
+
+    <p>
+      In a previous life, I was a financial journalist and China specialist. I love literature, but suffer from <a href="https://en.wiktionary.org/wiki/%E7%A9%8D%E3%82%93%E8%AA%AD">Tsundoku</a> - the compulsive habit of buying books faster than I can read them. My obsession with 1940s detective novels is rivalled only by my obsession with Bob Dylan.
+    </p>
+
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -87,27 +124,28 @@
 
   </section>
 
-  <section id="faq">
-    <h2>FAQ</h2>
+  <section id="timeline">
+    <h2>Timeline</h2>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
 
   </section>
 
-  <section  id="contact">
-    <h2>Contact</h2>
+  <section id="contact">
+    <h2>contact</h2>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="centered">Drop me a line about code, coffee or Cambridge.</p>
+
+    <p class="centered">richardjohnsilk<span id="botbuster"></span>gmail.com</p>
+
+    <p class="centered">Copyright © Richard Silk 2015</p>
 
   </section>
 </main>
