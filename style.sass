@@ -1,10 +1,15 @@
-$background-color: deepskyblue
+// $background-color: #3B8BCC
+// $background-color-odd: skyblue
+$background-color-odd: #cceeff
+$background-color-even: white
+$main-font: 'Abel' //'Raleway', 'Helvetica', 'Arial', sans-serif
+$display-font: 'Unica One', monospace
 
 body
-  background-color: $background-color
-  color: yellow
-  padding-bottom: 200px
-  font-family: 'Abel'
+  // background-color: $background-color
+  // color: #3B8BCC;
+  color: #333
+  font-family: $main-font
 
 header
   opacity: 0.9
@@ -14,11 +19,16 @@ header
   z-index: 1050;
 
   span.brand-name
-    text-transform: uppercase
+    font-family: $display-font
     font-weight: bold
-    font-family: 'Unica One'
     font-size: 3rem
     margin-left: 40px
+
+    span.my-name
+      text-transform: uppercase
+
+  li
+    // text-transform: uppercase
 
 main
   h1
@@ -31,10 +41,10 @@ main
     text-align: center
     text-transform: uppercase
     margin: 4rem
-    font-family: 'Unica One'
+    font-family: $display-font
 
   a
-    color: white;
+    color: #00aaff;
     -webkit-transition: color .1s ease-in-out;
     -moz-transition: color .1s ease-in-out;
     transition: color .1s ease-in-out;
@@ -46,15 +56,27 @@ main
     font-size: 2rem
     font-weight: 200
     margin: 4rem
-    font-weight: 100
+    font-weight: 300
 
-  p.centered
+  .centered
     text-align: center
 
   section
-    padding-top: 100px
+    padding: 50px 15%
     margin: 0 auto
-    width: 75%
+    width: 100%
+
+  section:first-child
+    padding-top: 150px
+
+  section:last-child
+    padding-bottom: 150px
+
+  section:nth-child(odd)
+    background-color: $background-color-odd
+
+  section:nth-child(even)
+    background-color: $background-color-even
 
   img#headshot
     width: 200px

@@ -1,8 +1,6 @@
 body {
-  background-color: deepskyblue;
-  color: yellow;
-  padding-bottom: 200px;
-  font-family: 'Abel';
+  color: #333;
+  font-family: "Abel";
 }
 
 header {
@@ -14,11 +12,14 @@ header {
 }
 
 header span.brand-name {
-  text-transform: uppercase;
+  font-family: "Unica One", monospace;
   font-weight: bold;
-  font-family: 'Unica One';
   font-size: 3rem;
   margin-left: 40px;
+}
+
+header span.brand-name span.my-name {
+  text-transform: uppercase;
 }
 
 main h1 {
@@ -33,11 +34,11 @@ main h1, main h2 {
   text-align: center;
   text-transform: uppercase;
   margin: 4rem;
-  font-family: 'Unica One';
+  font-family: "Unica One", monospace;
 }
 
 main a {
-  color: white;
+  color: #00aaff;
   -webkit-transition: color .1s ease-in-out;
   -moz-transition: color .1s ease-in-out;
   transition: color .1s ease-in-out;
@@ -51,17 +52,33 @@ main p {
   font-size: 2rem;
   font-weight: 200;
   margin: 4rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
-main p.centered {
+main .centered {
   text-align: center;
 }
 
 main section {
-  padding-top: 100px;
+  padding: 50px 15%;
   margin: 0 auto;
-  width: 75%;
+  width: 100%;
+}
+
+main section:first-child {
+  padding-top: 150px;
+}
+
+main section:last-child {
+  padding-bottom: 150px;
+}
+
+main section:nth-child(odd) {
+  background-color: #cceeff;
+}
+
+main section:nth-child(even) {
+  background-color: white;
 }
 
 main img#headshot {
