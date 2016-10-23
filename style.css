@@ -59,7 +59,6 @@ main a:hover, main a:focus {
 
 main p {
   font-size: 2rem;
-  font-weight: 200;
   margin: 4rem;
   font-weight: 300;
 }
@@ -114,8 +113,17 @@ main .button-holder .glyphicon {
   font-size: 3rem;
 }
 
+main section#projects img {
+  width: 100%;
+}
+
+main section#projects p {
+  margin-top: 1.5rem;
+}
+
 main .copyright {
   font-size: 1.6rem;
+  margin-top: 7rem;
 }
 
 @media (min-width: 768px) {
