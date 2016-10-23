@@ -12,14 +12,23 @@ header {
 }
 
 header span.brand-name {
-  font-family: "Unica One", monospace;
   font-weight: bold;
-  font-size: 3rem;
-  margin-left: 40px;
+}
+
+@media (min-width: 475px) {
+  header span.brand-name {
+    font-size: 3rem;
+    margin-left: 40px;
+  }
 }
 
 header span.brand-name span.my-name {
   text-transform: uppercase;
+  font-family: "Unica One", monospace;
+}
+
+header span.brand-name span.nine-below-zero {
+  font-family: "Abel";
 }
 
 main h1 {
@@ -60,17 +69,25 @@ main .centered {
 }
 
 main section {
-  padding: 50px 15%;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin: 0 auto;
-  width: 100%;
 }
 
-main section:first-child {
-  padding-top: 150px;
+main section .container {
+  max-width: 860px;
 }
 
-main section:last-child {
-  padding-bottom: 150px;
+@media (min-width: 768px) {
+  main section:first-child {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  main section:last-child {
+    padding-bottom: 150px;
+  }
 }
 
 main section:nth-child(odd) {
@@ -84,6 +101,21 @@ main section:nth-child(even) {
 main img#headshot {
   width: 200px;
   border: 2px solid white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .button-holder {
+  text-align: center;
+}
+
+main .button-holder .glyphicon {
+  color: #cceeff;
+  font-size: 3rem;
+}
+
+main .copyright {
+  font-size: 1.6rem;
 }
 
 @media (min-width: 768px) {

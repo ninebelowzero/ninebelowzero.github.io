@@ -19,13 +19,18 @@ header
   z-index: 1050;
 
   span.brand-name
-    font-family: $display-font
     font-weight: bold
-    font-size: 3rem
-    margin-left: 40px
+
+    @media(min-width: 475px)
+      font-size: 3rem
+      margin-left: 40px
 
     span.my-name
       text-transform: uppercase
+      font-family: $display-font
+
+    span.nine-below-zero
+      font-family: $main-font
 
   li
     // text-transform: uppercase
@@ -62,15 +67,20 @@ main
     text-align: center
 
   section
-    padding: 50px 15%
+    padding-top: 50px
+    padding-bottom: 50px
     margin: 0 auto
-    width: 100%
+
+    .container
+      max-width: 860px
 
   section:first-child
-    padding-top: 150px
+    @media(min-width: 768px)
+      padding-top: 200px
 
   section:last-child
-    padding-bottom: 150px
+    @media(min-width: 768px)
+      padding-bottom: 150px
 
   section:nth-child(odd)
     background-color: $background-color-odd
@@ -81,7 +91,19 @@ main
   img#headshot
     width: 200px
     border: 2px solid white;
+    margin: 0 auto
+    text-align: center
 
+  .button-holder
+    text-align: center;
+
+    .glyphicon
+
+      color: $background-color-odd
+      font-size: 3rem
+
+  .copyright
+    font-size: 1.6rem
 
 @media (min-width: 768px)
   .navbar
